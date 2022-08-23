@@ -7,10 +7,13 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "paths": {
-      "wui-first": ["projects/wui-first/dist"],
-      "wui-first/*": ["projects/wui-first/dist/*"],
-      "wui-second": ["projects/wui-second/dist"],
-      "wui-second/*": ["projects/wui-second/dist/*"]
+      "@app/*": [
+        "projects/*"
+      ],
+      "wui-icon": [
+        "dist/wui-icon/wui-icon",
+        "dist/wui-icon"
+      ],
     },
     "preserveSymlinks": true,
     "noImplicitReturns": true,

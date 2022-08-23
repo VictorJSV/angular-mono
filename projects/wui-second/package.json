@@ -1,8 +1,8 @@
 {
   "name": "wui-second",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "scripts": {
-    "build": "ng build second",
+    "build": "ng build wui-second",
     "postpublish": "rm -rf dist/"
   },
   "peerDependencies": {
@@ -11,6 +11,5 @@
   },
   "dependencies": {
     "tslib": "^2.3.0"
-  },
-  "gitHead": "376fe63d42bc2f75b4157ff72d9e4fd4bfce4d09"
+  }
 }

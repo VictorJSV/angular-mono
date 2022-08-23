@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-second',
+  selector: 'lib-wui-second',
   template: `
     <p>
-      second works!
+      wui-second works!
     </p>
   `,
   styles: [
   ]
 })
-export class SecondComponent implements OnInit {
+export class WuiSecondComponent implements OnInit {
 
   constructor() { }
 

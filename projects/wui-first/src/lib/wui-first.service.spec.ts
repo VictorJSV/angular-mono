@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { SecondService } from './second.service';
+import { WuiFirstService } from './wui-first.service';
 
-describe('SecondService', () => {
-  let service: SecondService;
+describe('WuiFirstService', () => {
+  let service: WuiFirstService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(SecondService);
+    service = TestBed.inject(WuiFirstService);
   });
 
   it('should be created', () => {

@@ -1,7 +1,7 @@
 /*
- * Public API Surface of first
+ * Public API Surface of wui-first
  */
 
-export * from './lib/first.service';
-export * from './lib/first.component';
-export * from './lib/first.module';
+export * from './lib/wui-first.service';
+export * from './lib/wui-first.component';
+export * from './lib/wui-first.module';

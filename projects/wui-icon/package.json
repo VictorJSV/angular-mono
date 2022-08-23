@@ -1,8 +1,8 @@
 {
-  "name": "wui-first",
+  "name": "wui-icon",
   "version": "0.0.1",
   "scripts": {
-    "build": "ng build wui-first",
+    "build": "ng build wui-icon",
     "postpublish": "rm -rf dist/"
   },
   "peerDependencies": {

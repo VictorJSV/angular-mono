@@ -1,7 +1,7 @@
 /*
- * Public API Surface of second
+ * Public API Surface of wui-second
  */
 
-export * from './lib/second.service';
-export * from './lib/second.component';
-export * from './lib/second.module';
+export * from './lib/wui-second.service';
+export * from './lib/wui-second.component';
+export * from './lib/wui-second.module';

@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FirstComponent } from './first.component';
+import { WuiSecondComponent } from './wui-second.component';
 
-describe('FirstComponent', () => {
-  let component: FirstComponent;
-  let fixture: ComponentFixture<FirstComponent>;
+describe('WuiSecondComponent', () => {
+  let component: WuiSecondComponent;
+  let fixture: ComponentFixture<WuiSecondComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FirstComponent ]
+      declarations: [ WuiSecondComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FirstComponent);
+    fixture = TestBed.createComponent(WuiSecondComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

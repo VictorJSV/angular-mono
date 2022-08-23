@@ -1,23 +1,23 @@
-# Second
+# WuiSecond
 
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
 
 ## Code scaffolding
 
-Run `ng generate component component-name --project second` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project second`.
-> Note: Don't forget to add `--project second` or else it will be added to the default project in your `angular.json` file. 
+Run `ng generate component component-name --project wui-second` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project wui-second`.
+> Note: Don't forget to add `--project wui-second` or else it will be added to the default project in your `angular.json` file. 
 
 ## Build
 
-Run `ng build second` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `ng build wui-second` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 ## Publishing
 
-After building your library with `ng build second`, go to the dist folder `cd dist/second` and run `npm publish`.
+After building your library with `ng build wui-second`, go to the dist folder `cd dist/wui-second` and run `npm publish`.
 
 ## Running unit tests
 
-Run `ng test second` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `ng test wui-second` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ## Further help
 

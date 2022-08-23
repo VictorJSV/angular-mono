@@ -16,16 +16,16 @@
     ],
     "injectables": [
         {
-            "name": "FirstService",
-            "id": "injectable-FirstService-446210664cf9ca0a87db6cd9b892d44b98966d0c690503e4c817824af901e056e0fde28133ecfe32fcf3cd81597d03ac20ce8a8ac090f5b0b195048a2f591f26",
-            "file": "projects/wui-first/src/lib/first.service.ts",
+            "name": "WuiFirstService",
+            "id": "injectable-WuiFirstService-0b7cbafa122ccd8fe20fed002740c5d8919cd7bddfb55ea68f8f319ab9c8a61fd961dbcc6c313dc49c12e0fd0fb60ff65069bf2ef5491112e26b0ee2b72cdd94",
+            "file": "projects/wui-first/src/lib/wui-first.service.ts",
             "properties": [],
             "methods": [],
             "deprecated": false,
             "deprecationMessage": "",
             "description": "",
             "rawdescription": "\n",
-            "sourceCode": "import { Injectable } from '@angular/core';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class FirstService {\n\n  constructor() { }\n}\n",
+            "sourceCode": "import { Injectable } from '@angular/core';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class WuiFirstService {\n\n  constructor() { }\n}\n",
             "constructorObj": {
                 "name": "constructor",
                 "description": "",
@@ -37,16 +37,16 @@
             "type": "injectable"
         },
         {
-            "name": "SecondService",
-            "id": "injectable-SecondService-9b7604e8c6a780f8fc427d4dac35c5dbf44eb71ea6332845d5665833ab627599706db3908ea4a76a63985c23f4a2f9a8a9d8a42f064440809c298c4d41565cc1",
-            "file": "projects/wui-second/src/lib/second.service.ts",
+            "name": "WuiSecondService",
+            "id": "injectable-WuiSecondService-d954c6ac58e914c9a2cf05e3d121bdeee867e2605dca74c335da1a83e07f3ae6caad97594e000a0dcb35a84db9e3bbacc2da25653a3b83a850500fdc01c3acec",
+            "file": "projects/wui-second/src/lib/wui-second.service.ts",
             "properties": [],
             "methods": [],
             "deprecated": false,
             "deprecationMessage": "",
             "description": "",
             "rawdescription": "\n",
-            "sourceCode": "import { Injectable } from '@angular/core';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class SecondService {\n\n  constructor() { }\n}\n",
+            "sourceCode": "import { Injectable } from '@angular/core';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class WuiSecondService {\n\n  constructor() { }\n}\n",
             "constructorObj": {
                 "name": "constructor",
                 "description": "",
@@ -230,18 +230,18 @@
             }
         },
         {
-            "name": "FirstComponent",
-            "id": "component-FirstComponent-e47e43db8214669fe1fb329c9713f87d65778a8116d5a919effd4583a3bba8b7ec33c788f0678ed8b593994bf7f0822a6c9d087ef3ef7b2566df1cff10170e2c",
-            "file": "projects/wui-first/src/lib/first.component.ts",
+            "name": "WuiFirstComponent",
+            "id": "component-WuiFirstComponent-b25e3948728688c2dfb8011d2990fe765614948df4ca3681700b5fa5081005c37d1cf4f8c8512829d6d8e5d451314843f65acad3de5a97a32c8f6ea6f387d385",
+            "file": "projects/wui-first/src/lib/wui-first.component.ts",
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
             "outputs": [],
             "providers": [],
-            "selector": "lib-first",
+            "selector": "lib-wui-first",
             "styleUrls": [],
             "styles": [],
-            "template": "<p>\n  first works!\n</p>\n",
+            "template": "<p>\n  wui-first works!\n</p>\n",
             "templateUrl": [],
             "viewProviders": [],
             "inputsClass": [],
@@ -266,7 +266,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'lib-first',\n  template: `\n    <p>\n      first works!\n    </p>\n  `,\n  styles: [\n  ]\n})\nexport class FirstComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'lib-wui-first',\n  template: `\n    <p>\n      wui-first works!\n    </p>\n  `,\n  styles: [\n  ]\n})\nexport class WuiFirstComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
@@ -283,18 +283,18 @@
             ]
         },
         {
-            "name": "SecondComponent",
-            "id": "component-SecondComponent-dec83424d73f3f938de88722f0a89f6d29b627d04aa5adca4b1e278d60cdbef214f015057a347c9f8da95b034098bc03502676a2987f51eb21203d9e2d9ca06c",
-            "file": "projects/wui-second/src/lib/second.component.ts",
+            "name": "WuiSecondComponent",
+            "id": "component-WuiSecondComponent-6ee1c7c3a450aeed180c35cadacc9fc64f0cf4e4baae7d35c3b22fd41dc750de34a920bf605aa94ac4b97086cabefff7fbf4195a12ec7bb9199a744ffb11ceaa",
+            "file": "projects/wui-second/src/lib/wui-second.component.ts",
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
             "outputs": [],
             "providers": [],
-            "selector": "lib-second",
+            "selector": "lib-wui-second",
             "styleUrls": [],
             "styles": [],
-            "template": "<p>\n  second works!\n</p>\n",
+            "template": "<p>\n  wui-second works!\n</p>\n",
             "templateUrl": [],
             "viewProviders": [],
             "inputsClass": [],
@@ -319,7 +319,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'lib-second',\n  template: `\n    <p>\n      second works!\n    </p>\n  `,\n  styles: [\n  ]\n})\nexport class SecondComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'lib-wui-second',\n  template: `\n    <p>\n      wui-second works!\n    </p>\n  `,\n  styles: [\n  ]\n})\nexport class WuiSecondComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
@@ -382,14 +382,14 @@
             ]
         },
         {
-            "name": "FirstModule",
-            "id": "module-FirstModule-8c6783e97e5b8abdfbc303a85965806b14d7834bdb9d0a23b8307ef434f5d4e097bb3a4a4395dc89a5d6fece1c4a64453a1deb49a146b5c6fe2b15900e8b218c",
+            "name": "WuiFirstModule",
+            "id": "module-WuiFirstModule-a3daa0b83c14e1036663a709eec69ef7b2f6d5fbc45f6f8601706bbb048ebfc9c91914e069d5db2d04f5e100bff9f2147546391363bf69ea59178c8a002fef5d",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
-            "file": "projects/wui-first/src/lib/first.module.ts",
+            "file": "projects/wui-first/src/lib/wui-first.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { FirstComponent } from './first.component';\n\n\n\n@NgModule({\n  declarations: [\n    FirstComponent\n  ],\n  imports: [\n  ],\n  exports: [\n    FirstComponent\n  ]\n})\nexport class FirstModule { }\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { WuiFirstComponent } from './wui-first.component';\n\n\n\n@NgModule({\n  declarations: [\n    WuiFirstComponent\n  ],\n  imports: [\n  ],\n  exports: [\n    WuiFirstComponent\n  ]\n})\nexport class WuiFirstModule { }\n",
             "children": [
                 {
                     "type": "providers",
@@ -399,7 +399,7 @@
                     "type": "declarations",
                     "elements": [
                         {
-                            "name": "FirstComponent"
+                            "name": "WuiFirstComponent"
                         }
                     ]
                 },
@@ -411,7 +411,7 @@
                     "type": "exports",
                     "elements": [
                         {
-                            "name": "FirstComponent"
+                            "name": "WuiFirstComponent"
                         }
                     ]
                 },
@@ -426,14 +426,14 @@
             ]
         },
         {
-            "name": "SecondModule",
-            "id": "module-SecondModule-3e12682a8243c8c763bbb39eeffd3595a06ad9b6feb673855070f9fd6499615a6b079a3399c3956cc79fc2c695b5e3feda9b9403cda6930604c4fb8f8684e0de",
+            "name": "WuiSecondModule",
+            "id": "module-WuiSecondModule-1332232f1ddc14d8fd896748af72fdeadda2b6d00284dc1aeed46b6566e4a63513050798b2d65bf65dd5ad3dca2f07ea96362ac4c070ac418747996fef3552aa",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
-            "file": "projects/wui-second/src/lib/second.module.ts",
+            "file": "projects/wui-second/src/lib/wui-second.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { SecondComponent } from './second.component';\n\n\n\n@NgModule({\n  declarations: [\n    SecondComponent\n  ],\n  imports: [\n  ],\n  exports: [\n    SecondComponent\n  ]\n})\nexport class SecondModule { }\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { WuiSecondComponent } from './wui-second.component';\n\n\n\n@NgModule({\n  declarations: [\n    WuiSecondComponent\n  ],\n  imports: [\n  ],\n  exports: [\n    WuiSecondComponent\n  ]\n})\nexport class WuiSecondModule { }\n",
             "children": [
                 {
                     "type": "providers",
@@ -443,7 +443,7 @@
                     "type": "declarations",
                     "elements": [
                         {
-                            "name": "SecondComponent"
+                            "name": "WuiSecondComponent"
                         }
                     ]
                 },
@@ -455,7 +455,7 @@
                     "type": "exports",
                     "elements": [
                         {
-                            "name": "SecondComponent"
+                            "name": "WuiSecondComponent"
                         }
                     ]
                 },
@@ -476,7 +476,7 @@
                 "name": "context",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/wui-first/src/test.ts",
+                "file": "projects/wui-second/src/test.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -486,7 +486,7 @@
                 "name": "context",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/wui-second/src/test.ts",
+                "file": "projects/wui-first/src/test.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -536,16 +536,6 @@
                 "name": "Primary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Second.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "() => ({\n  props: {\n    label: \"Second\",\n    primary: true,\n  },\n})"
-            },
-            {
-                "name": "Primary",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/stories/First.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -553,10 +543,20 @@
                 "defaultValue": "() => ({\n  props: {\n    label: \"First\",\n    primary: true,\n  },\n})"
             },
             {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Second.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "() => ({\n  props: {\n    label: \"Second\",\n    primary: true,\n  },\n})"
+            },
+            {
                 "name": "require",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/wui-first/src/test.ts",
+                "file": "projects/wui-second/src/test.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "literal type"
@@ -565,7 +565,7 @@
                 "name": "require",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/wui-second/src/test.ts",
+                "file": "projects/wui-first/src/test.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "literal type"
@@ -605,27 +605,6 @@
         "typealiases": [],
         "enumerations": [],
         "groupedVariables": {
-            "projects/wui-first/src/test.ts": [
-                {
-                    "name": "context",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/wui-first/src/test.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
-                },
-                {
-                    "name": "require",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/wui-first/src/test.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "literal type"
-                }
-            ],
             "projects/wui-second/src/test.ts": [
                 {
                     "name": "context",
@@ -642,6 +621,27 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "projects/wui-second/src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type"
+                }
+            ],
+            "projects/wui-first/src/test.ts": [
+                {
+                    "name": "context",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/wui-first/src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+                },
+                {
+                    "name": "require",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/wui-first/src/test.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "literal type"
@@ -723,18 +723,6 @@
                     "defaultValue": "(args: Button) => ({\n  props: args,\n})"
                 }
             ],
-            "src/stories/Second.stories.ts": [
-                {
-                    "name": "Primary",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Second.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "() => ({\n  props: {\n    label: \"Second\",\n    primary: true,\n  },\n})"
-                }
-            ],
             "src/stories/First.stories.ts": [
                 {
                     "name": "Primary",
@@ -745,6 +733,18 @@
                     "deprecationMessage": "",
                     "type": "Story",
                     "defaultValue": "() => ({\n  props: {\n    label: \"First\",\n    primary: true,\n  },\n})"
+                }
+            ],
+            "src/stories/Second.stories.ts": [
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Second.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "() => ({\n  props: {\n    label: \"Second\",\n    primary: true,\n  },\n})"
                 }
             ]
         },
@@ -758,19 +758,19 @@
         "status": "low",
         "files": [
             {
-                "filePath": "projects/wui-first/src/lib/first.component.ts",
+                "filePath": "projects/wui-first/src/lib/wui-first.component.ts",
                 "type": "component",
                 "linktype": "component",
-                "name": "FirstComponent",
+                "name": "WuiFirstComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/3",
                 "status": "low"
             },
             {
-                "filePath": "projects/wui-first/src/lib/first.service.ts",
+                "filePath": "projects/wui-first/src/lib/wui-first.service.ts",
                 "type": "injectable",
                 "linktype": "injectable",
-                "name": "FirstService",
+                "name": "WuiFirstService",
                 "coveragePercent": 0,
                 "coverageCount": "0/2",
                 "status": "low"
@@ -796,19 +796,19 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/wui-second/src/lib/second.component.ts",
+                "filePath": "projects/wui-second/src/lib/wui-second.component.ts",
                 "type": "component",
                 "linktype": "component",
-                "name": "SecondComponent",
+                "name": "WuiSecondComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/3",
                 "status": "low"
             },
             {
-                "filePath": "projects/wui-second/src/lib/second.service.ts",
+                "filePath": "projects/wui-second/src/lib/wui-second.service.ts",
                 "type": "injectable",
                 "linktype": "injectable",
-                "name": "SecondService",
+                "name": "WuiSecondService",
                 "coveragePercent": 0,
                 "coverageCount": "0/2",
                 "status": "low"

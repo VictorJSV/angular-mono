@@ -109,23 +109,23 @@
         }
       }
     },
-    "first": {
+    "wui-first": {
       "projectType": "library",
-      "root": "projects/first",
-      "sourceRoot": "projects/first/src",
+      "root": "projects/wui-first",
+      "sourceRoot": "projects/wui-first/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/first/ng-package.json"
+            "project": "projects/wui-first/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/first/tsconfig.lib.prod.json"
+              "tsConfig": "projects/wui-first/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/first/tsconfig.lib.json"
+              "tsConfig": "projects/wui-first/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -133,30 +133,30 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/first/src/test.ts",
-            "tsConfig": "projects/first/tsconfig.spec.json",
-            "karmaConfig": "projects/first/karma.conf.js"
+            "main": "projects/wui-first/src/test.ts",
+            "tsConfig": "projects/wui-first/tsconfig.spec.json",
+            "karmaConfig": "projects/wui-first/karma.conf.js"
           }
         }
       }
     },
-    "second": {
+    "wui-second": {
       "projectType": "library",
-      "root": "projects/second",
-      "sourceRoot": "projects/second/src",
+      "root": "projects/wui-second",
+      "sourceRoot": "projects/wui-second/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/second/ng-package.json"
+            "project": "projects/wui-second/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/second/tsconfig.lib.prod.json"
+              "tsConfig": "projects/wui-second/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/second/tsconfig.lib.json"
+              "tsConfig": "projects/wui-second/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -164,9 +164,40 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/second/src/test.ts",
-            "tsConfig": "projects/second/tsconfig.spec.json",
-            "karmaConfig": "projects/second/karma.conf.js"
+            "main": "projects/wui-second/src/test.ts",
+            "tsConfig": "projects/wui-second/tsconfig.spec.json",
+            "karmaConfig": "projects/wui-second/karma.conf.js"
+          }
+        }
+      }
+    },
+    "wui-icon": {
+      "projectType": "library",
+      "root": "projects/wui-icon",
+      "sourceRoot": "projects/wui-icon/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/wui-icon/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/wui-icon/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/wui-icon/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/wui-icon/src/test.ts",
+            "tsConfig": "projects/wui-icon/tsconfig.spec.json",
+            "karmaConfig": "projects/wui-icon/karma.conf.js"
           }
         }
       }

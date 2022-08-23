@@ -1,10 +1,10 @@
+import { WuiSecondComponent } from "@app/wui-second/src/public-api";
 import { Meta, Story } from "@storybook/angular";
 import { within, userEvent } from "@storybook/testing-library";
-import { SecondComponent } from "wui-second";
 
 export default {
   title: "Second",
-  component: SecondComponent,
+  component: WuiSecondComponent,
 } as Meta;
 
 export const Primary: Story = () => ({
