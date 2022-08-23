@@ -1,6 +1,6 @@
 import { Meta, Story } from '@storybook/angular';
 import { within, userEvent } from '@storybook/testing-library';
-import { FirstComponent } from "first";
+import { FirstComponent } from "wui-first";
 
 export default {
   title: "First",

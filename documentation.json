@@ -18,7 +18,7 @@
         {
             "name": "FirstService",
             "id": "injectable-FirstService-446210664cf9ca0a87db6cd9b892d44b98966d0c690503e4c817824af901e056e0fde28133ecfe32fcf3cd81597d03ac20ce8a8ac090f5b0b195048a2f591f26",
-            "file": "projects/first/src/lib/first.service.ts",
+            "file": "projects/wui-first/src/lib/first.service.ts",
             "properties": [],
             "methods": [],
             "deprecated": false,
@@ -39,7 +39,7 @@
         {
             "name": "SecondService",
             "id": "injectable-SecondService-9b7604e8c6a780f8fc427d4dac35c5dbf44eb71ea6332845d5665833ab627599706db3908ea4a76a63985c23f4a2f9a8a9d8a42f064440809c298c4d41565cc1",
-            "file": "projects/second/src/lib/second.service.ts",
+            "file": "projects/wui-second/src/lib/second.service.ts",
             "properties": [],
             "methods": [],
             "deprecated": false,
@@ -232,7 +232,7 @@
         {
             "name": "FirstComponent",
             "id": "component-FirstComponent-e47e43db8214669fe1fb329c9713f87d65778a8116d5a919effd4583a3bba8b7ec33c788f0678ed8b593994bf7f0822a6c9d087ef3ef7b2566df1cff10170e2c",
-            "file": "projects/first/src/lib/first.component.ts",
+            "file": "projects/wui-first/src/lib/first.component.ts",
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
@@ -283,82 +283,9 @@
             ]
         },
         {
-            "name": "HeaderComponent",
-            "id": "component-HeaderComponent-a557eec14f72c438a8033301f4d6ce023e0a1844a3b06ec2b38794a612acc31735ae78a5ee10071b230c8c20d699eb914554e69d07ade54adb371da8efb464cc",
-            "file": "src/stories/header.component.ts",
-            "encapsulation": [],
-            "entryComponents": [],
-            "inputs": [],
-            "outputs": [],
-            "providers": [],
-            "selector": "storybook-header",
-            "styleUrls": [
-                "./header.css"
-            ],
-            "styles": [],
-            "template": "<header>    <div class=\"wrapper\">\n      <div>\n        <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n              fill=\"#FFF\"\n            />\n            <path\n              d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n              fill=\"#555AB9\"\n            />\n            <path\n              d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\"\n              fill=\"#91BAF8\"\n            />\n          </g>\n        </svg>\n        <h1>Acme</h1>\n      </div>\n      <div>\n        <div *ngIf=\"user\">\n          <span class=\"welcome\">\n            Welcome, <b>{{ user.name }}</b\n            >!\n          </span>\n          <storybook-button\n            *ngIf=\"user\"\n            size=\"small\"\n            (onClick)=\"onLogout.emit($event)\"\n            label=\"Log out\"\n          ></storybook-button>\n        </div>\n        <div *ngIf=\"!user\">\n          <storybook-button\n            *ngIf=\"!user\"\n            size=\"small\"\n            class=\"margin-left\"\n            (onClick)=\"onLogin.emit($event)\"\n            label=\"Log in\"\n          ></storybook-button>\n          <storybook-button\n            *ngIf=\"!user\"\n            primary\n            size=\"small\"\n            primary=\"true\"\n            class=\"margin-left\"\n            (onClick)=\"onCreateAccount.emit($event)\"\n            label=\"Sign up\"\n          ></storybook-button>\n        </div>\n      </div>\n    </div>\n  </header>",
-            "templateUrl": [],
-            "viewProviders": [],
-            "inputsClass": [
-                {
-                    "name": "user",
-                    "defaultValue": "null",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 65,
-                    "type": "User | null",
-                    "decorators": []
-                }
-            ],
-            "outputsClass": [
-                {
-                    "name": "onCreateAccount",
-                    "defaultValue": "new EventEmitter<Event>()",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 74,
-                    "type": "EventEmitter"
-                },
-                {
-                    "name": "onLogin",
-                    "defaultValue": "new EventEmitter<Event>()",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 68,
-                    "type": "EventEmitter"
-                },
-                {
-                    "name": "onLogout",
-                    "defaultValue": "new EventEmitter<Event>()",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 71,
-                    "type": "EventEmitter"
-                }
-            ],
-            "propertiesClass": [],
-            "methodsClass": [],
-            "deprecated": false,
-            "deprecationMessage": "",
-            "hostBindings": [],
-            "hostListeners": [],
-            "description": "",
-            "rawdescription": "\n",
-            "type": "component",
-            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\nimport { User } from './User';\n\n@Component({\n  selector: 'storybook-header',\n  template: `<header>\n    <div class=\"wrapper\">\n      <div>\n        <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n              fill=\"#FFF\"\n            />\n            <path\n              d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n              fill=\"#555AB9\"\n            />\n            <path\n              d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\"\n              fill=\"#91BAF8\"\n            />\n          </g>\n        </svg>\n        <h1>Acme</h1>\n      </div>\n      <div>\n        <div *ngIf=\"user\">\n          <span class=\"welcome\">\n            Welcome, <b>{{ user.name }}</b\n            >!\n          </span>\n          <storybook-button\n            *ngIf=\"user\"\n            size=\"small\"\n            (onClick)=\"onLogout.emit($event)\"\n            label=\"Log out\"\n          ></storybook-button>\n        </div>\n        <div *ngIf=\"!user\">\n          <storybook-button\n            *ngIf=\"!user\"\n            size=\"small\"\n            class=\"margin-left\"\n            (onClick)=\"onLogin.emit($event)\"\n            label=\"Log in\"\n          ></storybook-button>\n          <storybook-button\n            *ngIf=\"!user\"\n            primary\n            size=\"small\"\n            primary=\"true\"\n            class=\"margin-left\"\n            (onClick)=\"onCreateAccount.emit($event)\"\n            label=\"Sign up\"\n          ></storybook-button>\n        </div>\n      </div>\n    </div>\n  </header>`,\n  styleUrls: ['./header.css'],\n})\nexport default class HeaderComponent {\n  @Input()\n  user: User | null = null;\n\n  @Output()\n  onLogin = new EventEmitter<Event>();\n\n  @Output()\n  onLogout = new EventEmitter<Event>();\n\n  @Output()\n  onCreateAccount = new EventEmitter<Event>();\n}\n",
-            "assetsDirs": [],
-            "styleUrlsData": [
-                {
-                    "data": ".wrapper {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  border-bottom: 1px solid rgba(0, 0, 0, 0.1);\n  padding: 15px 20px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n\nsvg {\n  display: inline-block;\n  vertical-align: top;\n}\n\nh1 {\n  font-weight: 900;\n  font-size: 20px;\n  line-height: 1;\n  margin: 6px 0 6px 10px;\n  display: inline-block;\n  vertical-align: top;\n}\n\nbutton + button {\n  margin-left: 10px;\n}\n\n.welcome {\n  color: #333;\n  font-size: 14px;\n  margin-right: 10px;\n}\n",
-                    "styleUrl": "./header.css"
-                }
-            ],
-            "stylesData": ""
-        },
-        {
             "name": "SecondComponent",
             "id": "component-SecondComponent-dec83424d73f3f938de88722f0a89f6d29b627d04aa5adca4b1e278d60cdbef214f015057a347c9f8da95b034098bc03502676a2987f51eb21203d9e2d9ca06c",
-            "file": "projects/second/src/lib/second.component.ts",
+            "file": "projects/wui-second/src/lib/second.component.ts",
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
@@ -460,7 +387,7 @@
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
-            "file": "projects/first/src/lib/first.module.ts",
+            "file": "projects/wui-first/src/lib/first.module.ts",
             "methods": [],
             "sourceCode": "import { NgModule } from '@angular/core';\nimport { FirstComponent } from './first.component';\n\n\n\n@NgModule({\n  declarations: [\n    FirstComponent\n  ],\n  imports: [\n  ],\n  exports: [\n    FirstComponent\n  ]\n})\nexport class FirstModule { }\n",
             "children": [
@@ -504,7 +431,7 @@
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
-            "file": "projects/second/src/lib/second.module.ts",
+            "file": "projects/wui-second/src/lib/second.module.ts",
             "methods": [],
             "sourceCode": "import { NgModule } from '@angular/core';\nimport { SecondComponent } from './second.component';\n\n\n\n@NgModule({\n  declarations: [\n    SecondComponent\n  ],\n  imports: [\n  ],\n  exports: [\n    SecondComponent\n  ]\n})\nexport class SecondModule { }\n",
             "children": [
@@ -549,7 +476,7 @@
                 "name": "context",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/first/src/test.ts",
+                "file": "projects/wui-first/src/test.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -559,7 +486,7 @@
                 "name": "context",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/second/src/test.ts",
+                "file": "projects/wui-second/src/test.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -596,26 +523,6 @@
                 "defaultValue": "Template.bind({})"
             },
             {
-                "name": "LoggedIn",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/Header.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "LoggedOut",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/Header.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
                 "name": "Primary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -626,10 +533,30 @@
                 "defaultValue": "Template.bind({})"
             },
             {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Second.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "() => ({\n  props: {\n    label: \"Second\",\n    primary: true,\n  },\n})"
+            },
+            {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/First.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "() => ({\n  props: {\n    label: \"First\",\n    primary: true,\n  },\n})"
+            },
+            {
                 "name": "require",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/first/src/test.ts",
+                "file": "projects/wui-first/src/test.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "literal type"
@@ -638,7 +565,7 @@
                 "name": "require",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/second/src/test.ts",
+                "file": "projects/wui-second/src/test.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "literal type"
@@ -672,28 +599,18 @@
                 "deprecationMessage": "",
                 "type": "Story<Button>",
                 "defaultValue": "(args: Button) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/Header.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<Header>",
-                "defaultValue": "(args: Header) => ({\n  props: args,\n})"
             }
         ],
         "functions": [],
         "typealiases": [],
         "enumerations": [],
         "groupedVariables": {
-            "projects/first/src/test.ts": [
+            "projects/wui-first/src/test.ts": [
                 {
                     "name": "context",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/first/src/test.ts",
+                    "file": "projects/wui-first/src/test.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -703,18 +620,18 @@
                     "name": "require",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/first/src/test.ts",
+                    "file": "projects/wui-first/src/test.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "literal type"
                 }
             ],
-            "projects/second/src/test.ts": [
+            "projects/wui-second/src/test.ts": [
                 {
                     "name": "context",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/second/src/test.ts",
+                    "file": "projects/wui-second/src/test.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -724,7 +641,7 @@
                     "name": "require",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/second/src/test.ts",
+                    "file": "projects/wui-second/src/test.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "literal type"
@@ -806,36 +723,28 @@
                     "defaultValue": "(args: Button) => ({\n  props: args,\n})"
                 }
             ],
-            "src/stories/Header.stories.ts": [
+            "src/stories/Second.stories.ts": [
                 {
-                    "name": "LoggedIn",
+                    "name": "Primary",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/Header.stories.ts",
+                    "file": "src/stories/Second.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
+                    "type": "Story",
+                    "defaultValue": "() => ({\n  props: {\n    label: \"Second\",\n    primary: true,\n  },\n})"
+                }
+            ],
+            "src/stories/First.stories.ts": [
                 {
-                    "name": "LoggedOut",
+                    "name": "Primary",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/Header.stories.ts",
+                    "file": "src/stories/First.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Header.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<Header>",
-                    "defaultValue": "(args: Header) => ({\n  props: args,\n})"
+                    "type": "Story",
+                    "defaultValue": "() => ({\n  props: {\n    label: \"First\",\n    primary: true,\n  },\n})"
                 }
             ]
         },
@@ -845,11 +754,11 @@
     },
     "routes": [],
     "coverage": {
-        "count": 3,
+        "count": 4,
         "status": "low",
         "files": [
             {
-                "filePath": "projects/first/src/lib/first.component.ts",
+                "filePath": "projects/wui-first/src/lib/first.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "FirstComponent",
@@ -858,7 +767,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/first/src/lib/first.service.ts",
+                "filePath": "projects/wui-first/src/lib/first.service.ts",
                 "type": "injectable",
                 "linktype": "injectable",
                 "name": "FirstService",
@@ -867,7 +776,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/first/src/test.ts",
+                "filePath": "projects/wui-first/src/test.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -877,7 +786,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/first/src/test.ts",
+                "filePath": "projects/wui-first/src/test.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -887,7 +796,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/second/src/lib/second.component.ts",
+                "filePath": "projects/wui-second/src/lib/second.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "SecondComponent",
@@ -896,7 +805,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/second/src/lib/second.service.ts",
+                "filePath": "projects/wui-second/src/lib/second.service.ts",
                 "type": "injectable",
                 "linktype": "injectable",
                 "name": "SecondService",
@@ -905,7 +814,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/second/src/test.ts",
+                "filePath": "projects/wui-second/src/test.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -915,7 +824,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/second/src/test.ts",
+                "filePath": "projects/wui-second/src/test.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1004,31 +913,21 @@
                 "status": "low"
             },
             {
-                "filePath": "src/stories/Header.stories.ts",
+                "filePath": "src/stories/First.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "LoggedIn",
+                "name": "Primary",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
             },
             {
-                "filePath": "src/stories/Header.stories.ts",
+                "filePath": "src/stories/Second.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "LoggedOut",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/Header.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Template",
+                "name": "Primary",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -1050,15 +949,6 @@
                 "coveragePercent": 83,
                 "coverageCount": "5/6",
                 "status": "very-good"
-            },
-            {
-                "filePath": "src/stories/header.component.ts",
-                "type": "component",
-                "linktype": "component",
-                "name": "HeaderComponent",
-                "coveragePercent": 0,
-                "coverageCount": "0/5",
-                "status": "low"
             }
         ]
     }

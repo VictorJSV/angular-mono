@@ -7,10 +7,10 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "paths": {
-      "first": ["projects/first/dist"],
-      "first/*": ["projects/first/dist/*"],
-      "second": ["projects/second/dist"],
-      "second/*": ["projects/second/dist/*"]
+      "wui-first": ["projects/wui-first/dist"],
+      "wui-first/*": ["projects/wui-first/dist/*"],
+      "wui-second": ["projects/wui-second/dist"],
+      "wui-second/*": ["projects/wui-second/dist/*"]
     },
     "preserveSymlinks": true,
     "noImplicitReturns": true,

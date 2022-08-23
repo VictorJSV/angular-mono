@@ -1,8 +1,8 @@
 {
-  "name": "first",
+  "name": "wui-second",
   "version": "0.1.0",
   "scripts": {
-    "build": "ng build first",
+    "build": "ng build second",
     "postpublish": "rm -rf dist/"
   },
   "peerDependencies": {
