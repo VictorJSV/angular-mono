@@ -11,5 +11,6 @@
   },
   "dependencies": {
     "tslib": "^2.4.0"
-  }
+  },
+  "gitHead": "6facc38cff28f42a30b8109b5683130c4fce5c26"
 }
