@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'lib-wui-first',
   template: `
     <p>
-      wui-first works 2 YEY!!!
+      wui-first works UPDATE!!!
     </p>
   `,
   styles: [
