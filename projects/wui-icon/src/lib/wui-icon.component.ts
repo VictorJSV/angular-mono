@@ -7,7 +7,7 @@ import { WuiIconName } from './model/wui-icon.model'
 @Component({
   selector: 'wui-icon',
   template: '',
-  styleUrls: ['./icon.component.scss'],
+  styleUrls: ['./wui-icon.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class WuiIconComponent {

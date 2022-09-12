@@ -18,7 +18,7 @@ export class WuiIconService {
 
     const icon = ICONS[iconName]
     if (icon) {
-      this.icons.set(icon.name, icon)
+      this.icons.set(icon.name as WuiIconName, icon as WuiIconModel);
     }
   }
 

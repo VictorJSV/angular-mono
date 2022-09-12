@@ -7,13 +7,7 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "paths": {
-      "@app/*": [
-        "projects/*"
-      ],
-      "wui-icon": [
-        "dist/wui-icon/wui-icon",
-        "dist/wui-icon"
-      ],
+      "@app/*": ["projects/*"]
     },
     "preserveSymlinks": true,
     "noImplicitReturns": true,
@@ -24,9 +18,9 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "es2017",
+    "target": "es2020",
     "module": "es2020",
-    "lib": ["es2018", "dom"]
+    "lib": ["es2020", "dom"]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

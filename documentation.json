@@ -12,6 +12,73 @@
             "properties": [],
             "indexSignatures": [],
             "methods": []
+        },
+        {
+            "name": "WuiIconModel",
+            "id": "interface-WuiIconModel-f161f7a059e1793c5af104bd222c3da8f41d24167c9f4ba14a39a023c4c93c74ec62e5d82694fd0fab75d1dc962e4b7c95ac47bf66483c6108d222443f528904",
+            "file": "projects/wui-icon/src/lib/model/wui-icon.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export type WuiIconName =\n  | 'bluetooth'\n  | 'calendarBold'\n  | 'calendar'\n  | 'cameraBold'\n  | 'camera'\n  | 'filterBold'\n  | 'filter'\n  | 'folder'\n  | 'keyboardArrowNext'\n  | 'zipFile';\nexport interface WuiIconModel {\n  name: WuiIconName;\n  data: string;\n}\n",
+            "properties": [
+                {
+                    "name": "data",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 16
+                },
+                {
+                    "name": "name",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "WuiIconName",
+                    "optional": false,
+                    "description": "",
+                    "line": 15
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
+            "name": "WuiIconModel",
+            "id": "interface-WuiIconModel-f161f7a059e1793c5af104bd222c3da8f41d24167c9f4ba14a39a023c4c93c74ec62e5d82694fd0fab75d1dc962e4b7c95ac47bf66483c6108d222443f528904-1",
+            "file": "projects/wui-icon/src/lib/icons/build/wui-icon.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export type WuiIconName =\n  | 'bluetooth'\n  | 'calendarBold'\n  | 'calendar'\n  | 'cameraBold'\n  | 'camera'\n  | 'filterBold'\n  | 'filter'\n  | 'folder'\n  | 'keyboardArrowNext'\n  | 'zipFile';\nexport interface WuiIconModel {\n  name: WuiIconName;\n  data: string;\n}\n",
+            "properties": [
+                {
+                    "name": "data",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 16
+                },
+                {
+                    "name": "name",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "WuiIconName",
+                    "optional": false,
+                    "description": "",
+                    "line": 15
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": [],
+            "isDuplicate": true,
+            "duplicateId": 1,
+            "duplicateName": "WuiIconModel-1"
         }
     ],
     "injectables": [
@@ -34,6 +101,121 @@
                 "args": [],
                 "line": 6
             },
+            "type": "injectable"
+        },
+        {
+            "name": "WuiIconService",
+            "id": "injectable-WuiIconService-84513c8a7073699bbc593475ac22823cb1b5b27df010705d1fdd91df49847873a9adc83c7eb90bd059522ee4496674fe00d6761562563fffa5eeb6f824e61f60",
+            "file": "projects/wui-icon/src/lib/wui-icon.service.ts",
+            "properties": [
+                {
+                    "name": "icons",
+                    "defaultValue": "new Map<WuiIconName, WuiIconModel>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Map<WuiIconName | WuiIconModel>",
+                    "optional": false,
+                    "description": "",
+                    "line": 9,
+                    "modifierKind": [
+                        121
+                    ]
+                }
+            ],
+            "methods": [
+                {
+                    "name": "getIcon",
+                    "args": [
+                        {
+                            "name": "name",
+                            "type": "WuiIconName",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "WuiIconModel | undefined",
+                    "typeParameters": [],
+                    "line": 31,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nGet the icon model by its name\n\n",
+                    "description": "<p>Get the icon model by its name</p>\n",
+                    "jsdoctags": [
+                        {
+                            "name": {
+                                "pos": 663,
+                                "end": 667,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "name"
+                            },
+                            "type": "WuiIconName",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "pos": 657,
+                                "end": 662,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "param"
+                            },
+                            "comment": "<p>Identification name of the icon</p>\n"
+                        },
+                        {
+                            "tagName": {
+                                "pos": 706,
+                                "end": 713,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "returns"
+                            },
+                            "comment": "<p>WuiIconModel or undefined</p>\n"
+                        }
+                    ]
+                },
+                {
+                    "name": "setIcon",
+                    "args": [
+                        {
+                            "name": "iconName",
+                            "type": "WuiIconName",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 16,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nRegister icon for later use\n\n",
+                    "description": "<p>Register icon for later use</p>\n",
+                    "jsdoctags": [
+                        {
+                            "name": "iconName",
+                            "type": "WuiIconName",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Injectable } from '@angular/core'\nimport { WuiIconModel, WuiIconName } from './model/wui-icon.model'\nimport * as ICONS from './icons'\n\n@Injectable({\n  providedIn: 'root',\n})\nexport class WuiIconService {\n  private icons: Map<WuiIconName, WuiIconModel> = new Map<WuiIconName, WuiIconModel>()\n\n  /**\n   * Register icon for later use\n   *\n   * @param icons Icon Name to register\n   */\n  setIcon(iconName: WuiIconName): void {\n    if (this.icons.has(iconName)) return\n\n    const icon = ICONS[iconName]\n    if (icon) {\n      this.icons.set(icon.name as WuiIconName, icon as WuiIconModel);\n    }\n  }\n\n  /**\n   * Get the icon model by its name\n   *\n   * @param name Identification name of the icon\n   * @returns WuiIconModel or undefined\n   */\n  getIcon(name: WuiIconName): WuiIconModel | undefined {\n    this.setIcon(name)\n    if (!this.icons.has(name)) {\n      // eslint-disable-next-line no-console\n      console.warn(`Icon with name ${name} not found.`)\n    }\n\n    return this.icons.get(name)\n  }\n}\n",
             "type": "injectable"
         },
         {
@@ -108,7 +290,7 @@
         {
             "name": "ButtonComponent",
             "id": "component-ButtonComponent-4ef205c97a334c309aa4001c8ab4a6d9571dcae18d0e85aaf0d367467ab5d3a9f13ab3573726f1fcb409bc9b49894dadfb80b1bbe1b6ba7041455ad9d4922004",
-            "file": "src/stories/button.component.ts",
+            "file": "src/stories/button/button.component.ts",
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
@@ -230,8 +412,156 @@
             }
         },
         {
+            "name": "IconsComponent",
+            "id": "component-IconsComponent-8b5f26c7a609ac04473b0dc27c4c12a614c70f984f2a2b33dade8656cfdc803dc9671d339f43a90109ff1e0ccd6873724c5c69d81e4d69e5fb9f2cc037509ad3",
+            "file": "src/stories/icons/icons.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-icon",
+            "styleUrls": [
+                "./icons.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./icons.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "color",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 20,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "filterBy",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 21,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "iconsNames",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "WuiIconName[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 19
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "filterIcons",
+                    "args": [
+                        {
+                            "name": "searchValue",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 41,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "searchValue",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "initIcons",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 35,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        121
+                    ]
+                },
+                {
+                    "name": "ngOnChanges",
+                    "args": [
+                        {
+                            "name": "changes",
+                            "type": "SimpleChanges",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 27,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "changes",
+                            "type": "SimpleChanges",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {\n  Component,\n  Input,\n  Output,\n  EventEmitter,\n  OnInit,\n  OnChanges,\n  SimpleChanges,\n} from \"@angular/core\";\nimport { WuiIconName } from \"@app/wui-icon/src/lib/model/wui-icon.model\";\nimport * as ICONS from \"@app/wui-icon/src/lib/icons\";\n\n@Component({\n  selector: \"storybook-icon\",\n  templateUrl: \"./icons.component.html\",\n  styleUrls: [\"./icons.component.scss\"],\n})\nexport default class IconsComponent implements OnChanges {\n  iconsNames!: WuiIconName[];\n  @Input() color?: string;\n  @Input() filterBy?: string;\n\n  constructor() {\n    this.initIcons();\n  }\n\n  ngOnChanges(changes: SimpleChanges): void {\n    if (changes.filterBy) {\n      changes.filterBy.currentValue.length\n        ? this.filterIcons(changes.filterBy.currentValue)\n        : this.initIcons();\n    }\n  }\n\n  private initIcons(): void {\n    this.iconsNames = Object.keys(ICONS).map(\n      (iconName: string) => iconName as WuiIconName\n    );\n  }\n\n  filterIcons(searchValue: string): void {\n    this.iconsNames = this.iconsNames.filter((iconName: string) =>\n      iconName.toLocaleLowerCase().includes(searchValue.trim().toLowerCase())\n    );\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".icons-list {\n  display: grid;\n  grid-gap: 2em;\n  grid-template-columns: repeat(auto-fill,minmax(calc(2 * 8rem),1fr));\n}\n.icon {\n  display: flex;\n  align-items: center;\n}\n.icon-item {\n  border: 1px solid #d6d6d6;\n  padding: 5px;\n  display: flex;\n  align-items: center;\n  border-radius: 4px;\n}\n.icon-name {\n  margin-left: 10px;\n}\n\nwui-icon {\n  font-size: 1.5rem;\n  cursor: pointer;\n}\n",
+                    "styleUrl": "./icons.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 21
+            },
+            "implements": [
+                "OnChanges"
+            ],
+            "templateData": "<div class=\"icons-list\">\n  <div class=\"icon\" *ngFor=\"let iconName of iconsNames\">\n    <div class=\"icon-item\">\n      <wui-icon\n        [iconName]=\"iconName\"\n        [ngStyle]=\"{ 'color': color }\"\n      ></wui-icon>\n    </div>\n    <div class=\"icon-name\">{{ iconName }}</div>\n  </div>\n</div>\n"
+        },
+        {
             "name": "WuiFirstComponent",
-            "id": "component-WuiFirstComponent-b25e3948728688c2dfb8011d2990fe765614948df4ca3681700b5fa5081005c37d1cf4f8c8512829d6d8e5d451314843f65acad3de5a97a32c8f6ea6f387d385",
+            "id": "component-WuiFirstComponent-f00079287654ee0242f6c6c6620c350e653d852cdec546601fa1bcc668f1f237d0ff79325aaf4d9cdc8ca0c0d41726be54617c03587761baa2110153fac2d374",
             "file": "projects/wui-first/src/lib/wui-first.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -241,7 +571,7 @@
             "selector": "lib-wui-first",
             "styleUrls": [],
             "styles": [],
-            "template": "<p>\n  wui-first works!\n</p>\n",
+            "template": "<p>\n  wui-first works 2 YEY!!!\n</p>\n",
             "templateUrl": [],
             "viewProviders": [],
             "inputsClass": [],
@@ -266,7 +596,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'lib-wui-first',\n  template: `\n    <p>\n      wui-first works!\n    </p>\n  `,\n  styles: [\n  ]\n})\nexport class WuiFirstComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'lib-wui-first',\n  template: `\n    <p>\n      wui-first works 2 YEY!!!\n    </p>\n  `,\n  styles: [\n  ]\n})\nexport class WuiFirstComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
@@ -281,6 +611,174 @@
             "implements": [
                 "OnInit"
             ]
+        },
+        {
+            "name": "WuiIconComponent",
+            "id": "component-WuiIconComponent-52ce72bf8d2e860e6f4870f94fd52b4adcfb677943f6689d31dc3541cfa6cf81c145b17887acd20d666f2acd012b99ddc35144de0355a5c04f6ff9866a7d7029",
+            "file": "projects/wui-icon/src/lib/wui-icon.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "wui-icon",
+            "styleUrls": [
+                "./wui-icon.component.scss"
+            ],
+            "styles": [],
+            "template": "",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "iconName",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\nName of the icon that you want to display (e.g. iconName=\"filter\").",
+                    "description": "<p>Name of the icon that you want to display (e.g. iconName=&quot;filter&quot;).</p>\n",
+                    "line": 20,
+                    "type": "WuiIconName | undefined",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "icon",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "WuiIconModel",
+                    "optional": true,
+                    "description": "",
+                    "line": 32,
+                    "modifierKind": [
+                        121
+                    ]
+                },
+                {
+                    "name": "svg",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "SVGElement",
+                    "optional": true,
+                    "description": "",
+                    "line": 15,
+                    "decorators": [
+                        {
+                            "name": "HostBinding",
+                            "stringifiedArguments": "'innerHTML'"
+                        }
+                    ]
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [
+                {
+                    "name": "innerHTML",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 15,
+                    "type": "SVGElement",
+                    "decorators": []
+                }
+            ],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { ChangeDetectionStrategy, Component, HostBinding, Input } from '@angular/core'\nimport { DomSanitizer } from '@angular/platform-browser'\nimport { WuiIconService } from './wui-icon.service'\nimport { WuiIconModel } from './icons'\nimport { WuiIconName } from './model/wui-icon.model'\n\n@Component({\n  selector: 'wui-icon',\n  template: '',\n  styleUrls: ['./wui-icon.component.scss'],\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class WuiIconComponent {\n  @HostBinding('innerHTML')\n  svg?: SVGElement\n\n  /** Name of the icon that you want to display (e.g. iconName=\"filter\"). */\n  @Input()\n  @HostBinding('attr.aria-label')\n  get iconName(): WuiIconName | undefined {\n    return this.icon?.name\n  }\n  set iconName(value: WuiIconName | undefined) {\n    if (!value || this.iconName === value) return\n\n    this.icon = this.WuiIconService.getIcon(value)\n\n    if (this.icon?.data) {\n      this.svg = this.sanitizer.bypassSecurityTrustHtml(this.icon.data) as SVGElement\n    }\n  }\n  private icon?: WuiIconModel\n\n  constructor(private sanitizer: DomSanitizer, private WuiIconService: WuiIconService) {}\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ":host {\n  display: inline-block;\n  width: 1em;\n  height: 1em;\n  vertical-align: middle;\n\n  ::ng-deep svg {\n    fill: currentColor;\n    min-width: 1em;\n    vertical-align: middle;\n  }\n}",
+                    "styleUrl": "./wui-icon.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "sanitizer",
+                        "type": "DomSanitizer",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    },
+                    {
+                        "name": "WuiIconService",
+                        "type": "WuiIconService",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 32,
+                "jsdoctags": [
+                    {
+                        "name": "sanitizer",
+                        "type": "DomSanitizer",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    },
+                    {
+                        "name": "WuiIconService",
+                        "type": "WuiIconService",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "accessors": {
+                "iconName": {
+                    "name": "iconName",
+                    "setSignature": {
+                        "name": "iconName",
+                        "type": "void",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "args": [
+                            {
+                                "name": "value",
+                                "type": "WuiIconName | undefined",
+                                "deprecated": false,
+                                "deprecationMessage": ""
+                            }
+                        ],
+                        "returnType": "void",
+                        "line": 23,
+                        "jsdoctags": [
+                            {
+                                "name": "value",
+                                "type": "WuiIconName | undefined",
+                                "deprecated": false,
+                                "deprecationMessage": "",
+                                "tagName": {
+                                    "text": "param"
+                                }
+                            }
+                        ]
+                    },
+                    "getSignature": {
+                        "name": "iconName",
+                        "type": "",
+                        "returnType": "WuiIconName | undefined",
+                        "line": 20,
+                        "rawdescription": "\nName of the icon that you want to display (e.g. iconName=\"filter\").",
+                        "description": "<p>Name of the icon that you want to display (e.g. iconName=&quot;filter&quot;).</p>\n"
+                    }
+                }
+            }
         },
         {
             "name": "WuiSecondComponent",
@@ -382,6 +880,50 @@
             ]
         },
         {
+            "name": "WabiIconModule",
+            "id": "module-WabiIconModule-84b820a1a601530678cc50cab8b11103de24e012a5ad700745308ddd5508f4e7454bac165867223bd7f113faa1c29e1935c6679088e16ba6623e77fcfb646272",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "projects/wui-icon/src/lib/wui-icon.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core'\nimport { WuiIconComponent } from './wui-icon.component'\n\n@NgModule({\n  declarations: [WuiIconComponent],\n  exports: [WuiIconComponent],\n})\nexport class WabiIconModule {}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "WuiIconComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "WuiIconComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
             "name": "WuiFirstModule",
             "id": "module-WuiFirstModule-a3daa0b83c14e1036663a709eec69ef7b2f6d5fbc45f6f8601706bbb048ebfc9c91914e069d5db2d04f5e100bff9f2147546391363bf69ea59178c8a002fef5d",
             "description": "",
@@ -473,10 +1015,60 @@
     "miscellaneous": {
         "variables": [
             {
+                "name": "bluetooth",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/wui-icon/src/lib/icons/build/-bluetooth.icon.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "literal type",
+                "defaultValue": "{\n  name: 'bluetooth',\n  data: `<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path style=\"fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px\" d=\"m5.617 18 12.75-12-6.75-5.25v22.5l6.75-5.25L5.617 6.75\"/></svg>`\n}"
+            },
+            {
+                "name": "calendar",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/wui-icon/src/lib/icons/build/-calendar.icon.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "literal type",
+                "defaultValue": "{\n  name: 'calendar',\n  data: `<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><defs><style>.a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px}</style></defs><rect class=\"a\" x=\".75\" y=\"3.75\" width=\"22.5\" height=\"19.5\" rx=\"1.5\" ry=\"1.5\"/><path class=\"a\" d=\"M.75 9.75h22.5M6.75 6V.75M17.25 6V.75M5.625 13.5h0M5.625 13.5a.375.375 0 1 0 .375.375.375.375 0 0 0-.375-.375M5.625 18.75h0M5.625 18.75a.375.375 0 1 0 .375.375.375.375 0 0 0-.375-.375M12 13.5h0M12 13.5a.375.375 0 1 0 .375.375A.375.375 0 0 0 12 13.5M12 18.75h0M12 18.75a.375.375 0 1 0 .375.375.375.375 0 0 0-.375-.375M18.375 13.5h0M18.375 13.5a.375.375 0 1 0 .375.375.375.375 0 0 0-.375-.375M18.375 18.75h0M18.375 18.75a.375.375 0 1 0 .375.375.375.375 0 0 0-.375-.375\"/></svg>`\n}"
+            },
+            {
+                "name": "calendarBold",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/wui-icon/src/lib/icons/build/-calendar-bold.icon.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "literal type",
+                "defaultValue": "{\n  name: 'calendarBold',\n  data: `<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M7.5 10.5h-1a1 1 0 1 0 0 2h1a1 1 0 0 0 0-2ZM12.5 10.5h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2ZM17.5 10.5h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2ZM7.5 14.5h-1a1 1 0 1 0 0 2h1a1 1 0 0 0 0-2ZM12.5 14.5h-1a1 1 0 1 0 0 2h1a1 1 0 0 0 0-2ZM17.5 14.5h-1a1 1 0 1 0 0 2h1a1 1 0 0 0 0-2ZM7.5 18.5h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2ZM12.5 18.5h-1a1 1 0 0 0 0 2h1a1 1 0 1 0 0-2ZM17.5 18.5h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2Z\"/><path d=\"M21.5 3h-2.75a.25.25 0 0 1-.25-.25V1a1 1 0 0 0-2 0v4.75a.75.75 0 1 1-1.5 0V3.5a.5.5 0 0 0-.5-.5H8.25A.25.25 0 0 1 8 2.751V1a1 1 0 1 0-2 0v4.75a.75.75 0 1 1-1.5 0V3.5A.5.5 0 0 0 4 3H2.5a2 2 0 0 0-2 2v17a2 2 0 0 0 2 2h19a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2Zm0 18.5a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5v-12A.5.5 0 0 1 3 9h18a.5.5 0 0 1 .5.5Z\"/></svg>`\n}"
+            },
+            {
+                "name": "camera",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/wui-icon/src/lib/icons/build/-camera.icon.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "literal type",
+                "defaultValue": "{\n  name: 'camera',\n  data: `<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><defs><style>.a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px}</style></defs><circle class=\"a\" cx=\"14.25\" cy=\"12.75\" r=\"5.25\"/><path class=\"a\" d=\"m19.5 6-1.085-2.171A1.5 1.5 0 0 0 17.073 3h-5.646a1.5 1.5 0 0 0-1.342.829L9 6H2.25a1.5 1.5 0 0 0-1.5 1.5v12a1.5 1.5 0 0 0 1.5 1.5h19.5a1.5 1.5 0 0 0 1.5-1.5v-12a1.5 1.5 0 0 0-1.5-1.5Z\"/><path class=\"a\" d=\"M4.125 9a.375.375 0 1 1-.375.375A.375.375 0 0 1 4.125 9M5.25 6V4.5\"/></svg>`\n}"
+            },
+            {
+                "name": "cameraBold",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/wui-icon/src/lib/icons/build/-camera-bold.icon.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "literal type",
+                "defaultValue": "{\n  name: 'cameraBold',\n  data: `<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><circle cx=\"14.75\" cy=\"13.125\" r=\"3.75\"/><path d=\"M21.444 6.125h-1.316a.534.534 0 0 1-.481-.346C19.029 4.475 18.39 3.125 17 3.125h-5c-1.071 0-1.636.778-2.659 2.191-.384.527-.51.809-.844.809h-6C.434 6.125 0 7.334 0 8.348v10.388a2.254 2.254 0 0 0 2.556 2.389h18.888A2.254 2.254 0 0 0 24 18.736V8.348c0-1.014-.443-2.223-2.556-2.223Zm-.944 7a5.75 5.75 0 1 1-5.75-5.75 5.756 5.756 0 0 1 5.75 5.75ZM5 9.875a1.25 1.25 0 1 1-1.25-1.25A1.25 1.25 0 0 1 5 9.875Z\"/><path d=\"m2.5 5.109 3 .016a.5.5 0 0 0 .5-.5v-.25a1.5 1.5 0 0 0-1.5-1.5h-1a1.5 1.5 0 0 0-1.5 1.5v.234a.5.5 0 0 0 .5.5Z\"/></svg>`\n}"
+            },
+            {
                 "name": "context",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/wui-second/src/test.ts",
+                "file": "projects/wui-first/src/test.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -486,7 +1078,17 @@
                 "name": "context",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/wui-first/src/test.ts",
+                "file": "projects/wui-icon/src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+            },
+            {
+                "name": "context",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/wui-second/src/test.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -513,24 +1115,64 @@
                 "defaultValue": "{\n  production: false\n}"
             },
             {
+                "name": "filter",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/wui-icon/src/lib/icons/build/-filter.icon.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "literal type",
+                "defaultValue": "{\n  name: 'filter',\n  data: `<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M23.2 2.054a.751.751 0 0 0-.748-.8H1.5a.75.75 0 0 0-.748.8 11.254 11.254 0 0 0 8.972 10.22v9.875a.75.75 0 0 0 1.23.576l3-2.5a.748.748 0 0 0 .27-.576v-7.375A11.253 11.253 0 0 0 23.2 2.054Z\" style=\"fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px\"/></svg>`\n}"
+            },
+            {
+                "name": "filterBold",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/wui-icon/src/lib/icons/build/-filter-bold.icon.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "literal type",
+                "defaultValue": "{\n  name: 'filterBold',\n  data: `<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" style=\"enable-background:new 0 0 24 24\" xml:space=\"preserve\"><path d=\"M10.496 24.504c-.829 0-1.504-.698-1.504-1.555v-9.622C4.049 12 .37 7.456.004 2.167.002 2.13 0 2.095 0 2.06c0-.414.156-.805.44-1.1A1.47 1.47 0 0 1 1.503.504h20.994a1.473 1.473 0 0 1 1.13.53c.264.312.396.712.37 1.128l-.001.01c-.37 5.288-4.05 9.832-8.992 11.155v7.03c0 .463-.197.898-.542 1.195l-3.005 2.591c-.27.232-.61.361-.961.361Z\"/></svg>`\n}"
+            },
+            {
+                "name": "folder",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/wui-icon/src/lib/icons/build/-folder.icon.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "literal type",
+                "defaultValue": "{\n  name: 'folder',\n  data: `<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M20.25 8.25a1.5 1.5 0 0 0-1.5-1.5h-9L8.69 5.689a1.5 1.5 0 0 0-1.061-.439H5.25a1.5 1.5 0 0 0-1.5 1.5v10.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5Z\" style=\"fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px\"/></svg>`\n}"
+            },
+            {
+                "name": "keyboardArrowNext",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/wui-icon/src/lib/icons/build/-keyboard-arrow-next.icon.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "literal type",
+                "defaultValue": "{\n  name: 'keyboardArrowNext',\n  data: `<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><defs><style>.a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px}</style></defs><path class=\"a\" d=\"M18.75 11.997h-18M15 15.747l3.75-3.75L15 8.247M23.25 1.497v21\"/></svg>`\n}"
+            },
+            {
                 "name": "Large",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Button.stories.ts",
+                "file": "src/stories/button/Button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             },
             {
-                "name": "Primary",
+                "name": "List",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Button.stories.ts",
+                "file": "src/stories/icons/Icons.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
+                "type": "Story",
+                "defaultValue": "(args) => ({\n  props: args,\n})"
             },
             {
                 "name": "Primary",
@@ -553,13 +1195,14 @@
                 "defaultValue": "() => ({\n  props: {\n    label: \"Second\",\n    primary: true,\n  },\n})"
             },
             {
-                "name": "require",
+                "name": "Primary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/wui-second/src/test.ts",
+                "file": "src/stories/button/Button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "literal type"
+                "type": "",
+                "defaultValue": "Template.bind({})"
             },
             {
                 "name": "require",
@@ -571,10 +1214,28 @@
                 "type": "literal type"
             },
             {
+                "name": "require",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/wui-icon/src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "literal type"
+            },
+            {
+                "name": "require",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/wui-second/src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "literal type"
+            },
+            {
                 "name": "Secondary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Button.stories.ts",
+                "file": "src/stories/button/Button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -584,7 +1245,7 @@
                 "name": "Small",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Button.stories.ts",
+                "file": "src/stories/button/Button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -594,36 +1255,119 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Button.stories.ts",
+                "file": "src/stories/button/Button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<Button>",
                 "defaultValue": "(args: Button) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "zipFile",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/wui-icon/src/lib/icons/build/-zip-file.icon.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "literal type",
+                "defaultValue": "{\n  name: 'zipFile',\n  data: `<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><defs><style>.a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px}</style></defs><path class=\"a\" d=\"M11.726 4.557a1.951 1.951 0 0 1-.474 1.533 2.039 2.039 0 0 1-3 0 1.951 1.951 0 0 1-.474-1.533L8.25.75h3ZM9.75 9.75a.375.375 0 1 1-.375.375.375.375 0 0 1 .375-.375M9.75 14.25a.375.375 0 1 1-.375.375.375.375 0 0 1 .375-.375M9.75 18.75a.375.375 0 1 1-.375.375.375.375 0 0 1 .375-.375\"/><path class=\"a\" d=\"M20.25 23.25H3.75a1.5 1.5 0 0 1-1.5-1.5V2.25a1.5 1.5 0 0 1 1.5-1.5h13.629a1.5 1.5 0 0 1 1.06.439l2.872 2.872a1.5 1.5 0 0 1 .439 1.06V21.75a1.5 1.5 0 0 1-1.5 1.5Z\"/></svg>`\n}"
             }
         ],
         "functions": [],
-        "typealiases": [],
+        "typealiases": [
+            {
+                "name": "WuiIconModelNameSubset",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "",
+                "file": "projects/wui-icon/src/lib/icons/index.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 193
+            },
+            {
+                "name": "WuiIconName",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "\"bluetooth\" | \"calendarBold\" | \"calendar\" | \"cameraBold\" | \"camera\" | \"filterBold\" | \"filter\" | \"folder\" | \"keyboardArrowNext\" | \"zipFile\"",
+                "file": "projects/wui-icon/src/lib/model/wui-icon.model.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 186
+            },
+            {
+                "name": "WuiIconName",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "\"bluetooth\" | \"calendarBold\" | \"calendar\" | \"cameraBold\" | \"camera\" | \"filterBold\" | \"filter\" | \"folder\" | \"keyboardArrowNext\" | \"zipFile\"",
+                "file": "projects/wui-icon/src/lib/icons/build/wui-icon.model.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 186
+            }
+        ],
         "enumerations": [],
         "groupedVariables": {
-            "projects/wui-second/src/test.ts": [
+            "projects/wui-icon/src/lib/icons/build/-bluetooth.icon.ts": [
                 {
-                    "name": "context",
+                    "name": "bluetooth",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/wui-second/src/test.ts",
+                    "file": "projects/wui-icon/src/lib/icons/build/-bluetooth.icon.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
-                },
+                    "type": "literal type",
+                    "defaultValue": "{\n  name: 'bluetooth',\n  data: `<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path style=\"fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px\" d=\"m5.617 18 12.75-12-6.75-5.25v22.5l6.75-5.25L5.617 6.75\"/></svg>`\n}"
+                }
+            ],
+            "projects/wui-icon/src/lib/icons/build/-calendar.icon.ts": [
                 {
-                    "name": "require",
+                    "name": "calendar",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/wui-second/src/test.ts",
+                    "file": "projects/wui-icon/src/lib/icons/build/-calendar.icon.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "literal type"
+                    "type": "literal type",
+                    "defaultValue": "{\n  name: 'calendar',\n  data: `<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><defs><style>.a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px}</style></defs><rect class=\"a\" x=\".75\" y=\"3.75\" width=\"22.5\" height=\"19.5\" rx=\"1.5\" ry=\"1.5\"/><path class=\"a\" d=\"M.75 9.75h22.5M6.75 6V.75M17.25 6V.75M5.625 13.5h0M5.625 13.5a.375.375 0 1 0 .375.375.375.375 0 0 0-.375-.375M5.625 18.75h0M5.625 18.75a.375.375 0 1 0 .375.375.375.375 0 0 0-.375-.375M12 13.5h0M12 13.5a.375.375 0 1 0 .375.375A.375.375 0 0 0 12 13.5M12 18.75h0M12 18.75a.375.375 0 1 0 .375.375.375.375 0 0 0-.375-.375M18.375 13.5h0M18.375 13.5a.375.375 0 1 0 .375.375.375.375 0 0 0-.375-.375M18.375 18.75h0M18.375 18.75a.375.375 0 1 0 .375.375.375.375 0 0 0-.375-.375\"/></svg>`\n}"
+                }
+            ],
+            "projects/wui-icon/src/lib/icons/build/-calendar-bold.icon.ts": [
+                {
+                    "name": "calendarBold",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/wui-icon/src/lib/icons/build/-calendar-bold.icon.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type",
+                    "defaultValue": "{\n  name: 'calendarBold',\n  data: `<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M7.5 10.5h-1a1 1 0 1 0 0 2h1a1 1 0 0 0 0-2ZM12.5 10.5h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2ZM17.5 10.5h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2ZM7.5 14.5h-1a1 1 0 1 0 0 2h1a1 1 0 0 0 0-2ZM12.5 14.5h-1a1 1 0 1 0 0 2h1a1 1 0 0 0 0-2ZM17.5 14.5h-1a1 1 0 1 0 0 2h1a1 1 0 0 0 0-2ZM7.5 18.5h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2ZM12.5 18.5h-1a1 1 0 0 0 0 2h1a1 1 0 1 0 0-2ZM17.5 18.5h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2Z\"/><path d=\"M21.5 3h-2.75a.25.25 0 0 1-.25-.25V1a1 1 0 0 0-2 0v4.75a.75.75 0 1 1-1.5 0V3.5a.5.5 0 0 0-.5-.5H8.25A.25.25 0 0 1 8 2.751V1a1 1 0 1 0-2 0v4.75a.75.75 0 1 1-1.5 0V3.5A.5.5 0 0 0 4 3H2.5a2 2 0 0 0-2 2v17a2 2 0 0 0 2 2h19a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2Zm0 18.5a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5v-12A.5.5 0 0 1 3 9h18a.5.5 0 0 1 .5.5Z\"/></svg>`\n}"
+                }
+            ],
+            "projects/wui-icon/src/lib/icons/build/-camera.icon.ts": [
+                {
+                    "name": "camera",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/wui-icon/src/lib/icons/build/-camera.icon.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type",
+                    "defaultValue": "{\n  name: 'camera',\n  data: `<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><defs><style>.a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px}</style></defs><circle class=\"a\" cx=\"14.25\" cy=\"12.75\" r=\"5.25\"/><path class=\"a\" d=\"m19.5 6-1.085-2.171A1.5 1.5 0 0 0 17.073 3h-5.646a1.5 1.5 0 0 0-1.342.829L9 6H2.25a1.5 1.5 0 0 0-1.5 1.5v12a1.5 1.5 0 0 0 1.5 1.5h19.5a1.5 1.5 0 0 0 1.5-1.5v-12a1.5 1.5 0 0 0-1.5-1.5Z\"/><path class=\"a\" d=\"M4.125 9a.375.375 0 1 1-.375.375A.375.375 0 0 1 4.125 9M5.25 6V4.5\"/></svg>`\n}"
+                }
+            ],
+            "projects/wui-icon/src/lib/icons/build/-camera-bold.icon.ts": [
+                {
+                    "name": "cameraBold",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/wui-icon/src/lib/icons/build/-camera-bold.icon.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type",
+                    "defaultValue": "{\n  name: 'cameraBold',\n  data: `<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><circle cx=\"14.75\" cy=\"13.125\" r=\"3.75\"/><path d=\"M21.444 6.125h-1.316a.534.534 0 0 1-.481-.346C19.029 4.475 18.39 3.125 17 3.125h-5c-1.071 0-1.636.778-2.659 2.191-.384.527-.51.809-.844.809h-6C.434 6.125 0 7.334 0 8.348v10.388a2.254 2.254 0 0 0 2.556 2.389h18.888A2.254 2.254 0 0 0 24 18.736V8.348c0-1.014-.443-2.223-2.556-2.223Zm-.944 7a5.75 5.75 0 1 1-5.75-5.75 5.756 5.756 0 0 1 5.75 5.75ZM5 9.875a1.25 1.25 0 1 1-1.25-1.25A1.25 1.25 0 0 1 5 9.875Z\"/><path d=\"m2.5 5.109 3 .016a.5.5 0 0 0 .5-.5v-.25a1.5 1.5 0 0 0-1.5-1.5h-1a1.5 1.5 0 0 0-1.5 1.5v.234a.5.5 0 0 0 .5.5Z\"/></svg>`\n}"
                 }
             ],
             "projects/wui-first/src/test.ts": [
@@ -642,6 +1386,48 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "projects/wui-first/src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type"
+                }
+            ],
+            "projects/wui-icon/src/test.ts": [
+                {
+                    "name": "context",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/wui-icon/src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+                },
+                {
+                    "name": "require",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/wui-icon/src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type"
+                }
+            ],
+            "projects/wui-second/src/test.ts": [
+                {
+                    "name": "context",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/wui-second/src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+                },
+                {
+                    "name": "require",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/wui-second/src/test.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "literal type"
@@ -671,12 +1457,60 @@
                     "defaultValue": "{\n  production: false\n}"
                 }
             ],
-            "src/stories/Button.stories.ts": [
+            "projects/wui-icon/src/lib/icons/build/-filter.icon.ts": [
+                {
+                    "name": "filter",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/wui-icon/src/lib/icons/build/-filter.icon.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type",
+                    "defaultValue": "{\n  name: 'filter',\n  data: `<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M23.2 2.054a.751.751 0 0 0-.748-.8H1.5a.75.75 0 0 0-.748.8 11.254 11.254 0 0 0 8.972 10.22v9.875a.75.75 0 0 0 1.23.576l3-2.5a.748.748 0 0 0 .27-.576v-7.375A11.253 11.253 0 0 0 23.2 2.054Z\" style=\"fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px\"/></svg>`\n}"
+                }
+            ],
+            "projects/wui-icon/src/lib/icons/build/-filter-bold.icon.ts": [
+                {
+                    "name": "filterBold",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/wui-icon/src/lib/icons/build/-filter-bold.icon.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type",
+                    "defaultValue": "{\n  name: 'filterBold',\n  data: `<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" style=\"enable-background:new 0 0 24 24\" xml:space=\"preserve\"><path d=\"M10.496 24.504c-.829 0-1.504-.698-1.504-1.555v-9.622C4.049 12 .37 7.456.004 2.167.002 2.13 0 2.095 0 2.06c0-.414.156-.805.44-1.1A1.47 1.47 0 0 1 1.503.504h20.994a1.473 1.473 0 0 1 1.13.53c.264.312.396.712.37 1.128l-.001.01c-.37 5.288-4.05 9.832-8.992 11.155v7.03c0 .463-.197.898-.542 1.195l-3.005 2.591c-.27.232-.61.361-.961.361Z\"/></svg>`\n}"
+                }
+            ],
+            "projects/wui-icon/src/lib/icons/build/-folder.icon.ts": [
+                {
+                    "name": "folder",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/wui-icon/src/lib/icons/build/-folder.icon.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type",
+                    "defaultValue": "{\n  name: 'folder',\n  data: `<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M20.25 8.25a1.5 1.5 0 0 0-1.5-1.5h-9L8.69 5.689a1.5 1.5 0 0 0-1.061-.439H5.25a1.5 1.5 0 0 0-1.5 1.5v10.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5Z\" style=\"fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px\"/></svg>`\n}"
+                }
+            ],
+            "projects/wui-icon/src/lib/icons/build/-keyboard-arrow-next.icon.ts": [
+                {
+                    "name": "keyboardArrowNext",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/wui-icon/src/lib/icons/build/-keyboard-arrow-next.icon.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type",
+                    "defaultValue": "{\n  name: 'keyboardArrowNext',\n  data: `<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><defs><style>.a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px}</style></defs><path class=\"a\" d=\"M18.75 11.997h-18M15 15.747l3.75-3.75L15 8.247M23.25 1.497v21\"/></svg>`\n}"
+                }
+            ],
+            "src/stories/button/Button.stories.ts": [
                 {
                     "name": "Large",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/Button.stories.ts",
+                    "file": "src/stories/button/Button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -686,7 +1520,7 @@
                     "name": "Primary",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/Button.stories.ts",
+                    "file": "src/stories/button/Button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -696,7 +1530,7 @@
                     "name": "Secondary",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/Button.stories.ts",
+                    "file": "src/stories/button/Button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -706,7 +1540,7 @@
                     "name": "Small",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/Button.stories.ts",
+                    "file": "src/stories/button/Button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -716,11 +1550,23 @@
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/Button.stories.ts",
+                    "file": "src/stories/button/Button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<Button>",
                     "defaultValue": "(args: Button) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/stories/icons/Icons.stories.ts": [
+                {
+                    "name": "List",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/icons/Icons.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "(args) => ({\n  props: args,\n})"
                 }
             ],
             "src/stories/First.stories.ts": [
@@ -746,15 +1592,67 @@
                     "type": "Story",
                     "defaultValue": "() => ({\n  props: {\n    label: \"Second\",\n    primary: true,\n  },\n})"
                 }
+            ],
+            "projects/wui-icon/src/lib/icons/build/-zip-file.icon.ts": [
+                {
+                    "name": "zipFile",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/wui-icon/src/lib/icons/build/-zip-file.icon.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type",
+                    "defaultValue": "{\n  name: 'zipFile',\n  data: `<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><defs><style>.a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px}</style></defs><path class=\"a\" d=\"M11.726 4.557a1.951 1.951 0 0 1-.474 1.533 2.039 2.039 0 0 1-3 0 1.951 1.951 0 0 1-.474-1.533L8.25.75h3ZM9.75 9.75a.375.375 0 1 1-.375.375.375.375 0 0 1 .375-.375M9.75 14.25a.375.375 0 1 1-.375.375.375.375 0 0 1 .375-.375M9.75 18.75a.375.375 0 1 1-.375.375.375.375 0 0 1 .375-.375\"/><path class=\"a\" d=\"M20.25 23.25H3.75a1.5 1.5 0 0 1-1.5-1.5V2.25a1.5 1.5 0 0 1 1.5-1.5h13.629a1.5 1.5 0 0 1 1.06.439l2.872 2.872a1.5 1.5 0 0 1 .439 1.06V21.75a1.5 1.5 0 0 1-1.5 1.5Z\"/></svg>`\n}"
+                }
             ]
         },
         "groupedFunctions": {},
         "groupedEnumerations": {},
-        "groupedTypeAliases": {}
+        "groupedTypeAliases": {
+            "projects/wui-icon/src/lib/icons/index.ts": [
+                {
+                    "name": "WuiIconModelNameSubset",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "",
+                    "file": "projects/wui-icon/src/lib/icons/index.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 193
+                }
+            ],
+            "projects/wui-icon/src/lib/model/wui-icon.model.ts": [
+                {
+                    "name": "WuiIconName",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "\"bluetooth\" | \"calendarBold\" | \"calendar\" | \"cameraBold\" | \"camera\" | \"filterBold\" | \"filter\" | \"folder\" | \"keyboardArrowNext\" | \"zipFile\"",
+                    "file": "projects/wui-icon/src/lib/model/wui-icon.model.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 186
+                }
+            ],
+            "projects/wui-icon/src/lib/icons/build/wui-icon.model.ts": [
+                {
+                    "name": "WuiIconName",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "\"bluetooth\" | \"calendarBold\" | \"calendar\" | \"cameraBold\" | \"camera\" | \"filterBold\" | \"filter\" | \"folder\" | \"keyboardArrowNext\" | \"zipFile\"",
+                    "file": "projects/wui-icon/src/lib/icons/build/wui-icon.model.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 186
+                }
+            ]
+        }
     },
     "routes": [],
     "coverage": {
-        "count": 4,
+        "count": 3,
         "status": "low",
         "files": [
             {
@@ -787,6 +1685,162 @@
             },
             {
                 "filePath": "projects/wui-first/src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "require",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/wui-icon/src/lib/icons/build/-bluetooth.icon.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "bluetooth",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/wui-icon/src/lib/icons/build/-calendar-bold.icon.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "calendarBold",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/wui-icon/src/lib/icons/build/-calendar.icon.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "calendar",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/wui-icon/src/lib/icons/build/-camera-bold.icon.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "cameraBold",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/wui-icon/src/lib/icons/build/-camera.icon.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "camera",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/wui-icon/src/lib/icons/build/-filter-bold.icon.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "filterBold",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/wui-icon/src/lib/icons/build/-filter.icon.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "filter",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/wui-icon/src/lib/icons/build/-folder.icon.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "folder",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/wui-icon/src/lib/icons/build/-keyboard-arrow-next.icon.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "keyboardArrowNext",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/wui-icon/src/lib/icons/build/-zip-file.icon.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "zipFile",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/wui-icon/src/lib/icons/build/wui-icon.model.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "WuiIconModel",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/wui-icon/src/lib/model/wui-icon.model.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "WuiIconModel",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/wui-icon/src/lib/wui-icon.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "WuiIconComponent",
+                "coveragePercent": 16,
+                "coverageCount": "1/6",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/wui-icon/src/lib/wui-icon.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "WuiIconService",
+                "coveragePercent": 50,
+                "coverageCount": "2/4",
+                "status": "medium"
+            },
+            {
+                "filePath": "projects/wui-icon/src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "context",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/wui-icon/src/test.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -863,56 +1917,6 @@
                 "status": "low"
             },
             {
-                "filePath": "src/stories/Button.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Large",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/Button.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Primary",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/Button.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Secondary",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/Button.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Small",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/Button.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Template",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
                 "filePath": "src/stories/First.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
@@ -942,13 +1946,82 @@
                 "status": "low"
             },
             {
-                "filePath": "src/stories/button.component.ts",
+                "filePath": "src/stories/button/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Large",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/button/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/button/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Secondary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/button/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Small",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/button/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/button/button.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "ButtonComponent",
                 "coveragePercent": 83,
                 "coverageCount": "5/6",
                 "status": "very-good"
+            },
+            {
+                "filePath": "src/stories/icons/Icons.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "List",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/icons/icons.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "IconsComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/8",
+                "status": "low"
             }
         ]
     }

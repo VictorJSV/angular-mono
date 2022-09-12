@@ -1,0 +1,11 @@
+<div class="icons-list">
+  <div class="icon" *ngFor="let iconName of iconsNames">
+    <div class="icon-item">
+      <wui-icon
+        [iconName]="iconName"
+        [ngStyle]="{ 'color': color }"
+      ></wui-icon>
+    </div>
+    <div class="icon-name">{{ iconName }}</div>
+  </div>
+</div>

@@ -192,6 +192,28 @@
           },
           "defaultConfiguration": "production"
         },
+        "generate-icons": {
+          "builder": "@angular-extensions/svg-icons-builder:svg-icons-files-builder",
+          "options": {
+            "conversionType": "files",
+            "srcFiles": ["src/lib/svgs/*.svg"],
+            "outputDirectory": "src/lib/icons",
+            "additionalModelOutputPath": "src/lib/model",
+            "delimiter": "CAMEL",
+            "interfaceName": "WuiIconModel",
+            "typeName": "WuiIconName",
+            "prefix": "",
+            "fileName": "wui-icon.model",
+            "modelFileName": "wui-icon.model",
+            "compileSources": false,
+            "barrelFileName": "index",
+            "generateType": true,
+            "exportCompleteIconSet": false,
+            "iconsFolderName": "build",
+            "generateTypeObject": false,
+            "svgoConfig": {}
+          }
+        },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
