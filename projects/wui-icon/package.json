@@ -1,15 +1,15 @@
 {
   "name": "wui-icon",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "scripts": {
     "build": "ng build wui-icon",
     "postpublish": "rm -rf dist/",
     "generate-icons": "ng run wui-icon:generate-icons"
   },
   "peerDependencies": {
+    "@angular-extensions/svg-icons-builder": "^3.0.0",
     "@angular/common": "~14.2.1",
-    "@angular/core": "~14.2.1",
-    "@angular-extensions/svg-icons-builder": "^3.0.0"
+    "@angular/core": "~14.2.1"
   },
   "dependencies": {
     "tslib": "^2.4.0"
